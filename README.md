@@ -1,4 +1,4 @@
 # Budget control App
 
-[Demolink](https://kulchevych.github.io/budgetControl/).
+[Demolink](https://kulchevych.github.io/budgetControl/)
 

@@ -1,0 +1,28 @@
+.Insights {
+  padding: 30px 18px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .graphs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .topGraphs {
+      display: flex;
+      gap: 11px;
+    }
+  }
+
+  .metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+}

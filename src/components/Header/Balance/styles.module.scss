@@ -1,0 +1,22 @@
+.Balance {
+  margin-left: 40px;
+  display: flex;
+  gap: 15px;
+  white-space: nowrap;
+  font-size: 30px;
+  color: white;
+
+  .amount {
+    color: rgb(255, 136, 39);
+
+    &.red {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  img {
+    margin-top: 5px;
+    height: 34px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,115 @@
+.Income {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 900px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+    .title {
+      margin: 0;
+      text-align: center;
+      color: rgb(161, 73, 219);
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .categories {
+      width: 260px;
+      position: relative;
+      margin-top: 20px;
+      padding: 16px;
+      min-height: 275px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 20px;
+      color: white;
+      overflow: auto;
+      border-radius: 16px;
+      border: 3px solid rgb(161, 73, 219);
+
+      .category {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+
+        &:hover {
+          &::after {
+            background-color: rgb(176, 118, 214);
+          }
+        }
+
+        &.active {
+          &::after {
+            background-color: rgb(161, 73, 219);
+          }
+
+          .name {
+            font-weight: 700;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 10px;
+          top: 5px;
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          background-color: rgb(221, 178, 250);
+          border-radius: 8px;
+          transition: all 0.3s;
+        }
+
+        .categoryNumber {
+          position: relative;
+          z-index: 1;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          background-color: rgb(255, 136, 39);
+          border: 2px solid white;
+          border-radius: 50%;
+        }
+
+        .name {
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+
+    .form {
+      position: absolute;
+      bottom: 180px;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}

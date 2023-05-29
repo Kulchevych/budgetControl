@@ -1,0 +1,66 @@
+.GraphDetail {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(228.41deg, #00E4AC 0%, #10C5E9 53.88%, #9240DC 106.71%);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(96, 91, 255, 0.17);
+    transform: translateX(-50%);
+  }
+  
+  .label {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 89px;
+    height: 56px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #030229;
+    border-radius: 10px;
+    line-height: 16px;
+    transform: translate(-50%, calc(-100% - 12px));
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 38px;
+      bottom: -10px;
+      width: 14px;
+      height: 14px;
+      background: #030229;
+      transform: rotate(45deg);
+    }
+  
+    .name {
+      font-weight: 400;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+  
+    .amount {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  
+  .reference {
+    position: absolute;
+    top: 20px;
+    left: - 1px;
+    border: 1px dashed #605BFF;
+  }
+}

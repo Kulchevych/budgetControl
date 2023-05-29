@@ -1,0 +1,29 @@
+.App {
+  min-width: 1630px;
+
+  .body {
+    padding: 40px 50px 10px;
+
+    div {
+      box-sizing: border-box;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: rgb(161, 73, 219);
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgb(161, 73, 219);
+}

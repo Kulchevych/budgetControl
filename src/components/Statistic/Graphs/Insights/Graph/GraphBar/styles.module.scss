@@ -1,0 +1,40 @@
+.GraphBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  .name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .bar {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background: #f2f4f8;
+    border-radius: 0px 8px 8px 0px;
+
+    .filledBar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 12px;
+      background: rgb(161, 73, 219);
+      border-radius: 0px 8px 8px 0px;
+
+      &.green {
+        background-color: #00e4ac;
+      }
+    }
+
+    .amount {
+      position: absolute;
+      bottom: -4px;
+      left: calc(100% + 3px);
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }
+}

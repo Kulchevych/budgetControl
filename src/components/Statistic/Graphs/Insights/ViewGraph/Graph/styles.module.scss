@@ -1,0 +1,77 @@
+.graph {
+  position: relative;
+  margin: 47px 31px 0;
+  height: 254px;
+  width: calc(100% - 25px);
+
+  .noData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #C1C5D6;
+  }
+}
+
+.percents {
+  position: absolute;
+  width: 100%;
+  bottom: 35px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 31px;
+
+  .percent {
+    position: relative;
+    font-family: 'Gilroy-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.7;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      top: 8px;
+      left: 32px;
+      width: calc(100% - 75px);
+      opacity: 0.05;
+      background: #030229;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 12px;
+  left: 52px;
+  font-family: 'Gilroy-Regular';
+  font-size: 12px;
+  line-height: 20px;
+  color: #030229;
+  opacity: 0.7;
+}
+
+.days {
+  display: flex;
+  gap: 50px;
+
+  .day {
+    width: 53px;
+  }
+}
+
+.months {
+  display: flex;
+  gap: 33px;
+
+  .month {
+    width: 25px;
+    text-align: center;
+  }
+}

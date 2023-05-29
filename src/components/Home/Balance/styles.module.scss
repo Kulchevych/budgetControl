@@ -1,0 +1,22 @@
+.Balance {
+  padding: 40px 40px 20px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+
+  .title {
+    font-size: 30px;
+  }
+
+  .value {
+    color: rgb(255, 136, 39);
+
+    &.red {
+      color: red;
+    }
+  }
+}

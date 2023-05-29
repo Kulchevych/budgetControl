@@ -1,0 +1,16 @@
+.views {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    overflow: visible;
+    top: 100%;
+
+    path {
+      cursor: pointer;
+    }
+  }
+}

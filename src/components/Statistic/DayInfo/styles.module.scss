@@ -1,0 +1,50 @@
+.DayInfo {
+  position: relative;
+  width: calc(100vw - 460px);
+  height: 540px;
+  padding: 60px 15px 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 18px;
+  box-shadow: 0px -4px 66px rgba(62, 63, 99, 0.1);
+  overflow: hidden;
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 38px;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  .content {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    .leftPanel,
+    .rightPanel {
+      height: 194px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .title {
+      min-width: 140px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.Header {
+  height: 80px;
+  padding: 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(161, 73, 219);
+
+  img {
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .navMenu {
+    height: 100%;
+
+    ul {
+      position: relative;
+      padding: 0;
+      margin: 0 0 0 160px;
+      height: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      list-style: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .Header .navMenu ul {
+    margin-left: 60px;
+  }
+}

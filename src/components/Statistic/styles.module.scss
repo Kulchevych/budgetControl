@@ -1,0 +1,41 @@
+.Statistic {
+  display: flex;
+  gap: 40px;
+
+  .leftPanel {
+    position: sticky;
+    top: 20px;
+    height: max-content;
+
+    .calendarInfo {
+      margin-top: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-radius: 18px;
+      box-shadow: 0px -4px 66px rgba(62, 63, 99, 0.1);
+
+      .info {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font-size: 20px;
+
+        .infoColor {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  .rigthPanel {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+}

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/budgetControl/static/css/main.22f72fb4.css",
-    "main.js": "/budgetControl/static/js/main.394ee308.js",
-    "static/media/costs.png": "/budgetControl/static/media/costs.eb9d7832754a50e21ff7.png",
-    "static/media/settings.png": "/budgetControl/static/media/settings.94af2cdef7118574ffc6.png",
-    "static/media/statistic.png": "/budgetControl/static/media/statistic.9e470bf3bc690619dd8a.png",
-    "static/media/forecast.png": "/budgetControl/static/media/forecast.99e3cb4be74837d4d4ce.png",
-    "static/media/edit.png": "/budgetControl/static/media/edit.301e81a72e2bc16e4811.png",
-    "static/media/income.png": "/budgetControl/static/media/income.e4d2d1ba124b14021b76.png",
-    "static/media/logo.png": "/budgetControl/static/media/logo.ac0a539c45a6d5c733c4.png",
-    "static/media/calendar.svg": "/budgetControl/static/media/calendar.dea68547885ca8d49377.svg",
-    "static/media/chevron.svg": "/budgetControl/static/media/chevron.f427a7f04ff6098c0e8a.svg",
-    "index.html": "/budgetControl/index.html",
-    "main.22f72fb4.css.map": "/budgetControl/static/css/main.22f72fb4.css.map",
-    "main.394ee308.js.map": "/budgetControl/static/js/main.394ee308.js.map"
+    "main.css": "/budgetControl/home/static/css/main.b1032622.css",
+    "main.js": "/budgetControl/home/static/js/main.21d6d186.js",
+    "static/media/costs.png": "/budgetControl/home/static/media/costs.eb9d7832754a50e21ff7.png",
+    "static/media/settings.png": "/budgetControl/home/static/media/settings.94af2cdef7118574ffc6.png",
+    "static/media/statistic.png": "/budgetControl/home/static/media/statistic.9e470bf3bc690619dd8a.png",
+    "static/media/forecast.png": "/budgetControl/home/static/media/forecast.99e3cb4be74837d4d4ce.png",
+    "static/media/edit.png": "/budgetControl/home/static/media/edit.301e81a72e2bc16e4811.png",
+    "static/media/income.png": "/budgetControl/home/static/media/income.e4d2d1ba124b14021b76.png",
+    "static/media/logo.png": "/budgetControl/home/static/media/logo.ac0a539c45a6d5c733c4.png",
+    "static/media/calendar.svg": "/budgetControl/home/static/media/calendar.dea68547885ca8d49377.svg",
+    "static/media/chevron.svg": "/budgetControl/home/static/media/chevron.f427a7f04ff6098c0e8a.svg",
+    "index.html": "/budgetControl/home/index.html",
+    "main.b1032622.css.map": "/budgetControl/home/static/css/main.b1032622.css.map",
+    "main.21d6d186.js.map": "/budgetControl/home/static/js/main.21d6d186.js.map"
   },
   "entrypoints": [
-    "static/css/main.22f72fb4.css",
-    "static/js/main.394ee308.js"
+    "static/css/main.b1032622.css",
+    "static/js/main.21d6d186.js"
   ]
 }

@@ -41,7 +41,7 @@ export default function Settings() {
             onChange={handleFileSelect}
             accept=".txt"
           />
-          <span onClick={save}>Зберігти дані у файл</span>
+          <span onClick={save}>Зберегти дані у файл</span>
         </div>
         <span className={classes.red} onClick={clear}>
           Очистити всі дані

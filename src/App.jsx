@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { AppContextProvider } from "./components/context/AppContext";
 
 import Home from "./components/Home";
@@ -14,22 +14,22 @@ import classes from "./styles.module.scss";
 export default function App() {
   return (
     <AppContextProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className={classes.App}>
           <Header />
           <div className={classes.body}>
             <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/costs" element={<Costs />} />
-              <Route path="/Income" element={<Income />} />
-              <Route path="/statistic" element={<Statistic />} />
-              <Route path="/forecast" element={<Forecast />} />
-              <Route path="/settings" element={<Settings />} />
+              <Route path="home" element={<Home />} />
+              <Route path="costs" element={<Costs />} />
+              <Route path="Income" element={<Income />} />
+              <Route path="statistic" element={<Statistic />} />
+              <Route path="forecast" element={<Forecast />} />
+              <Route path="settings" element={<Settings />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AppContextProvider>
   );
 }

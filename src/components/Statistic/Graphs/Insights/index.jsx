@@ -14,8 +14,8 @@ function isThisWeek(date) {
   );
   const days = Math.floor((date - startDate) / (24 * 60 * 60 * 1000));
 
-  const todayWeekNumber = Math.ceil(daysToday / 7);
-  const dateWeekNumber = Math.ceil(days / 7);
+  const todayWeekNumber = Math.floor(daysToday / 7);
+  const dateWeekNumber = Math.floor(days / 7);
 
   return todayWeekNumber === dateWeekNumber;
 }
@@ -74,15 +74,13 @@ export default function Insights({ stats, metrics }) {
       daysCosts[costDate.getDay() - 1] += cost?.count;
     }
   });
-
+  
   const graphData = {
     daysCosts,
     daysIncomes,
     monthCosts,
     monthIncomes,
   };
-
-  console.log(graphData);
 
   return (
     <div className={classes.Insights}>

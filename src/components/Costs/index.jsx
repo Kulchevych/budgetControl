@@ -14,6 +14,7 @@ const categories = [
   "Купівлі",
   "Подарунки",
   "Кредити",
+  "Інше",
 ];
 
 export default function Costs() {

@@ -15,11 +15,14 @@ export default function Graphs({ isDateSelected, events }) {
 
         if (hasIncomesCategoriesAlreadyCount) {
           hasIncomesCategoriesAlreadyCount.count += 1;
+          hasIncomesCategoriesAlreadyCount.amount =
+            +hasIncomesCategoriesAlreadyCount.amount + +event.amount;
         } else {
           incomesCategoriesCount.push({
             type: "Надходження",
             title: event.category,
             count: 1,
+            amount: event.amount,
           });
         }
       } else {
@@ -29,11 +32,14 @@ export default function Graphs({ isDateSelected, events }) {
 
         if (hasCostsCategoriesAlreadyCount) {
           hasCostsCategoriesAlreadyCount.count += 1;
+          hasCostsCategoriesAlreadyCount.amount =
+            +hasCostsCategoriesAlreadyCount.amount + +event.amount;
         } else {
           costsCategoriesCount.push({
             type: "Витрати",
             title: event.category,
             count: 1,
+            amount: event.amount,
           });
         }
       }
@@ -94,7 +100,11 @@ export default function Graphs({ isDateSelected, events }) {
 
     const costsAmountPerDay = allCosts / uniqueDays.length;
 
-    return [
+    const categoryMostCosts = stats.costsGraph.sort(
+      (a, b) => b.amount - a.amount
+    )[0];
+
+    const metrics = [
       {
         title: "Всього надходжень",
         amount: `${allIncomes} грн`,
@@ -123,7 +133,19 @@ export default function Graphs({ isDateSelected, events }) {
         amount: `${costsAmountPerMonth.toFixed(2)} грн`,
       },
     ];
-  }, [events]);
+
+    if (categoryMostCosts) {
+      metrics.push({
+        title: `Найбільше витрат за категорією - ${
+          categoryMostCosts?.title || ""
+        }`,
+        amount: `${categoryMostCosts?.amount} грн`,
+        color: "red",
+      });
+    }
+
+    return metrics;
+  }, [events, stats]);
 
   return (
     <div

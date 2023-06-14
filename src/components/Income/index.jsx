@@ -10,6 +10,7 @@ const categories = [
   "Стипендія",
   "Пенсія",
   "Соціальні виплати",
+  "Інше",
 ];
 
 export default function Income() {

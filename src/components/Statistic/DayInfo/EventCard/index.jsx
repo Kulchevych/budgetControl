@@ -27,6 +27,7 @@ export default function EventCard({ event }) {
         <span className={classes.date}>{getFormatDate(event.date)}</span>
       </div>
       <div className={classes.footer}>
+        <span className={classes.details}>{event?.details}</span>
         <span className={classes.amount}>
           {event.type === "Надходження" ? "+" : "-"}
           <span

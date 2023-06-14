@@ -4,6 +4,7 @@ import classes from "./styles.module.scss";
 export default function Input({
   text,
   value,
+  size,
   type,
   setValue,
   placeholder,
@@ -25,6 +26,7 @@ export default function Input({
         onChange={hanleOnChange}
         style={{ width, fontSize }}
         ref={reference}
+        maxLength={size}
       />
     </div>
   );

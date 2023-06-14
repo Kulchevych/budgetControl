@@ -30,20 +30,15 @@ export default function GraphPoints({ data }) {
 
   const graphRef = useRef();
 
-  const totalFirstAmount =
-    data[0].reduce((accum, item) => accum + item, 0) || 1;
-  const totalSecondAmount =
-    data[1].reduce((accum, item) => accum + item, 0) || 1;
+  const totalFirstAmount = Math.max(...data[0]);
+  const totalSecondAmount = Math.max(...data[1]);
+
 
   useEffect(() => {
     setFirstPoints([
       ...data[0]?.map((item, index) => {
         const x = index * (100 / (data[0].length - 1)) * 6.4;
-        let y = (item / (totalFirstAmount / 100)) * 3.38;
-
-        if (index === 0 || index === data[0].length - 1) {
-          y = (item / (totalFirstAmount / 100)) * 2.54;
-        }
+        let y = (item / (totalFirstAmount / 100)) * 2.54;
 
         return [x || 0, -y || 0];
       }),
@@ -51,11 +46,8 @@ export default function GraphPoints({ data }) {
     setSecondPoints([
       ...data[1]?.map((item, index) => {
         const x = index * (100 / (data[1].length - 1)) * 6.4;
-        let y = (item / (totalSecondAmount / 100)) * 3.38;
-
-        if (index === 0 || index === data[1].length - 1) {
-          y = (item / (totalSecondAmount / 100)) * 2.54;
-        }
+        let y = (item / (totalSecondAmount / 100)) * 2.54;
+    
         return [x || 0, -y || 0];
       }),
     ]);

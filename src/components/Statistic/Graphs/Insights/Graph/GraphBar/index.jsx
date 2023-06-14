@@ -9,17 +9,28 @@ export default function GraphBar({ item, totalAmount }) {
     setFilledBarSize(item.count / (totalAmount / 100));
   }, [item.count, totalAmount]);
 
+  const isIncome = item.type === "Надходження";
+
   return (
     <div className={classes.GraphBar}>
-      <span className={classes.name}>{item.title}</span>
+      <div>
+        <span className={classes.name}>{item?.title}</span>
+        <span
+          className={classNames(classes.amount, {
+            [classes.green]: isIncome,
+          })}
+        >
+          {item.amount} грн
+        </span>
+      </div>
       <div className={classes.bar}>
         <div
           className={classNames(classes.filledBar, {
-            [classes.green]: item.type === "Надходження",
+            [classes.green]: isIncome,
           })}
           style={{ width: `${filledBarSize}%` }}
         >
-          <span className={classes.amount}>{item.count}</span>
+          <span className={classes.count}>{item.count}</span>
         </div>
       </div>
     </div>

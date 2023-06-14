@@ -14,6 +14,7 @@ function getFormatDate(date) {
 export default function CategoriesForm({ title, categories, type }) {
   const [amountValue, setAmountValue] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [details, setDetails] = useState("");
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [isCalendarVisible, setCalendarVisible] = useState(false);
 
@@ -27,6 +28,7 @@ export default function CategoriesForm({ title, categories, type }) {
     const newRecord = {
       type,
       category: selectedCategory,
+      details,
       amount: amountValue,
       date: selectedDate,
     };
@@ -66,6 +68,14 @@ export default function CategoriesForm({ title, categories, type }) {
             setValue={setAmountValue}
             type="number"
             placeholder="1000"
+          />
+          <Input
+            text="Додатково (вибірково):"
+            value={details}
+            setValue={setDetails}
+            type="text"
+            size={30}
+            placeholder="Наприклад, інформація про транзакцію"
           />
           <span>Категорія: {selectedCategory || "Не обрано"}</span>
           <div className={classes.date}>

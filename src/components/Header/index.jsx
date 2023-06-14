@@ -45,7 +45,7 @@ export default function Header() {
         alt="logo"
         width={70}
         onClick={() => {
-          navigate("/home");
+          navigate("home");
           setActiveTab("");
         }}
       />

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/budgetControl/static/css/main.22f72fb4.css",
-    "main.js": "/budgetControl/static/js/main.303bfbe4.js",
+    "main.css": "/budgetControl/static/css/main.067a71a4.css",
+    "main.js": "/budgetControl/static/js/main.42a28316.js",
     "static/media/costs.png": "/budgetControl/static/media/costs.eb9d7832754a50e21ff7.png",
     "static/media/settings.png": "/budgetControl/static/media/settings.94af2cdef7118574ffc6.png",
     "static/media/statistic.png": "/budgetControl/static/media/statistic.9e470bf3bc690619dd8a.png",
@@ -12,11 +12,11 @@
     "static/media/calendar.svg": "/budgetControl/static/media/calendar.dea68547885ca8d49377.svg",
     "static/media/chevron.svg": "/budgetControl/static/media/chevron.f427a7f04ff6098c0e8a.svg",
     "index.html": "/budgetControl/index.html",
-    "main.22f72fb4.css.map": "/budgetControl/static/css/main.22f72fb4.css.map",
-    "main.303bfbe4.js.map": "/budgetControl/static/js/main.303bfbe4.js.map"
+    "main.067a71a4.css.map": "/budgetControl/static/css/main.067a71a4.css.map",
+    "main.42a28316.js.map": "/budgetControl/static/js/main.42a28316.js.map"
   },
   "entrypoints": [
-    "static/css/main.22f72fb4.css",
-    "static/js/main.303bfbe4.js"
+    "static/css/main.067a71a4.css",
+    "static/js/main.42a28316.js"
   ]
 }
